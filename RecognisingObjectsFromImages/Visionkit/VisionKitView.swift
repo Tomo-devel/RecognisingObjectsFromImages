@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  VisionKitView.swift
 //  RecognisingObjectsFromImages
 //
 //  Created by 井上智輝 on 2023-03-15.
@@ -7,17 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct VisionKitView: View {
     var body: some View {
         
-        NavigationStack {
-            HomeView()
-        }
+        Text("開発中")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct VisionKitView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VisionKitView()
     }
 }

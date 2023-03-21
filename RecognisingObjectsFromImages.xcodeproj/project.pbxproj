@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52D4C8029C85E54008BF53F /* FaceDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D4C7F29C85E54008BF53F /* FaceDetectionView.swift */; };
 		E5B0102C29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0102B29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift */; };
 		E5B0102E29C18A7100158390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0102D29C18A7100158390 /* ContentView.swift */; };
 		E5B0103029C18A7300158390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B0102F29C18A7300158390 /* Assets.xcassets */; };
 		E5B0103329C18A7300158390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B0103229C18A7300158390 /* Preview Assets.xcassets */; };
+		E5B0103A29C18AD300158390 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0103929C18AD300158390 /* HomeView.swift */; };
+		E5B0103D29C192AD00158390 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0103C29C192AD00158390 /* PhotoLibrary.swift */; };
+		E5B0103F29C1979700158390 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0103E29C1979700158390 /* CameraView.swift */; };
+		E5B0104229C1A79000158390 /* VisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0104129C1A79000158390 /* VisionView.swift */; };
+		E5B0104429C1A8C100158390 /* VisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0104329C1A8C100158390 /* VisionModel.swift */; };
+		E5B0104829C1BA7E00158390 /* VisionKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0104729C1BA7E00158390 /* VisionKitView.swift */; };
+		E5C686A929C2D264004A9259 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C686A829C2D264004A9259 /* ResultView.swift */; };
+		E5C686AB29C2DF79004A9259 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C686AA29C2DF79004A9259 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E52D4C7F29C85E54008BF53F /* FaceDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionView.swift; sourceTree = "<group>"; };
 		E5B0102829C18A7100158390 /* RecognisingObjectsFromImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecognisingObjectsFromImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B0102B29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognisingObjectsFromImagesApp.swift; sourceTree = "<group>"; };
 		E5B0102D29C18A7100158390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5B0102F29C18A7300158390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5B0103229C18A7300158390 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5B0103929C18AD300158390 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E5B0103C29C192AD00158390 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		E5B0103E29C1979700158390 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E5B0104129C1A79000158390 /* VisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionView.swift; sourceTree = "<group>"; };
+		E5B0104329C1A8C100158390 /* VisionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionModel.swift; sourceTree = "<group>"; };
+		E5B0104729C1BA7E00158390 /* VisionKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionKitView.swift; sourceTree = "<group>"; };
+		E5C686A829C2D264004A9259 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		E5C686AA29C2DF79004A9259 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E52D4C8129C861DE008BF53F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5B0104329C1A8C100158390 /* VisionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E5B0101F29C18A7100158390 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +79,10 @@
 			children = (
 				E5B0102B29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift */,
 				E5B0102D29C18A7100158390 /* ContentView.swift */,
+				E5B0103929C18AD300158390 /* HomeView.swift */,
+				E5B0104029C1A69F00158390 /* Vision */,
+				E5B0104629C1BA5D00158390 /* Visionkit */,
+				E5B0103B29C1927F00158390 /* ImagePicker */,
 				E5B0102F29C18A7300158390 /* Assets.xcassets */,
 				E5B0103129C18A7300158390 /* Preview Content */,
 			);
@@ -65,6 +95,35 @@
 				E5B0103229C18A7300158390 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5B0103B29C1927F00158390 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				E5B0103C29C192AD00158390 /* PhotoLibrary.swift */,
+				E5B0103E29C1979700158390 /* CameraView.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		E5B0104029C1A69F00158390 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				E5B0104129C1A79000158390 /* VisionView.swift */,
+				E5C686A829C2D264004A9259 /* ResultView.swift */,
+				E52D4C7F29C85E54008BF53F /* FaceDetectionView.swift */,
+				E5C686AA29C2DF79004A9259 /* WebView.swift */,
+				E52D4C8129C861DE008BF53F /* Model */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		E5B0104629C1BA5D00158390 /* Visionkit */ = {
+			isa = PBXGroup;
+			children = (
+				E5B0104729C1BA7E00158390 /* VisionKitView.swift */,
+			);
+			path = Visionkit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B0104229C1A79000158390 /* VisionView.swift in Sources */,
+				E5C686AB29C2DF79004A9259 /* WebView.swift in Sources */,
+				E52D4C8029C85E54008BF53F /* FaceDetectionView.swift in Sources */,
+				E5B0104829C1BA7E00158390 /* VisionKitView.swift in Sources */,
+				E5C686A929C2D264004A9259 /* ResultView.swift in Sources */,
+				E5B0103D29C192AD00158390 /* PhotoLibrary.swift in Sources */,
 				E5B0102E29C18A7100158390 /* ContentView.swift in Sources */,
 				E5B0102C29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift in Sources */,
+				E5B0104429C1A8C100158390 /* VisionModel.swift in Sources */,
+				E5B0103F29C1979700158390 /* CameraView.swift in Sources */,
+				E5B0103A29C18AD300158390 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +338,7 @@
 				DEVELOPMENT_TEAM = VK4B283MSG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリでカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +368,7 @@
 				DEVELOPMENT_TEAM = VK4B283MSG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリでカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
