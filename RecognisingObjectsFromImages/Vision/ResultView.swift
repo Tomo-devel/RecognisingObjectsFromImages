@@ -12,7 +12,7 @@ struct ResultView: View {
     @State var isSee: Bool = true
     @State var labelText: String = "eye"
     let image: UIImage
-    let mode: Mode
+    let mode: VisionMode
     
     var body: some View {
         

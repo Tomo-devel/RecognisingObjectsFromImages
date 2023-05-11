@@ -23,7 +23,7 @@ enum Framework: CaseIterable {
     }
 }
 
-enum Mode: CaseIterable {
+enum VisionMode: CaseIterable {
     case text
     case barcode
     case face
@@ -42,6 +42,21 @@ enum Mode: CaseIterable {
     }
 }
 
+enum VisionKitMode: CaseIterable {
+    case live
+    case image
+    
+    func changeJP() -> String {
+        switch self {
+        case .live:
+            return "ライブビデオから認識"
+            
+        case .image:
+            return "画像から認識"
+        }
+    }
+}
+
 
 struct HomeView: View {
     @State var isShowCameraView: Bool = false
@@ -53,18 +68,24 @@ struct HomeView: View {
         VStack {
             List(Framework.allCases, id: \.self) { framework in
                 Section {
-                    ForEach(Mode.allCases, id: \.self) { mode in
-                        NavigationLink {
-                            if framework == .vision {
-                                VisionView(modeName: mode.changeJP(),
-                                           mode: mode)
+                    if framework == .vision {
+                        ForEach(VisionMode.allCases, id: \.self) { mode in
+                            NavigationLink {
+                                VisionView(mode: mode)
                                 
-                            } else {
-                                VisionKitView()
+                            } label: {
+                                Text(mode.changeJP())
                             }
-                            
-                        } label: {
-                            Text(mode.changeJP())
+                        }
+                        
+                    } else {
+                        ForEach(VisionKitMode.allCases, id: \.self) { mode in
+                            NavigationLink {
+                                VisionKitView(mode: mode)
+                                
+                            } label: {
+                                Text(mode.changeJP())
+                            }
                         }
                     }
                     

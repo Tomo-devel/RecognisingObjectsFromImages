@@ -10,7 +10,7 @@ import SwiftUI
 struct FaceDetectionView: View {
     @ObservedObject var model: VisionModel
     let image: UIImage
-    let mode: Mode
+    let mode: VisionMode
     
     var body: some View {
         

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E52D4C8029C85E54008BF53F /* FaceDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D4C7F29C85E54008BF53F /* FaceDetectionView.swift */; };
+		E5A05FEF2A0B7DBD001A1938 /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A05FEE2A0B7DBD001A1938 /* DataScanner.swift */; };
+		E5A05FF12A0B85B4001A1938 /* ImageAnalysisInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A05FF02A0B85B4001A1938 /* ImageAnalysisInteraction.swift */; };
 		E5B0102C29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0102B29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift */; };
 		E5B0102E29C18A7100158390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B0102D29C18A7100158390 /* ContentView.swift */; };
 		E5B0103029C18A7300158390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B0102F29C18A7300158390 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		E52D4C7F29C85E54008BF53F /* FaceDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionView.swift; sourceTree = "<group>"; };
+		E5A05FEE2A0B7DBD001A1938 /* DataScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScanner.swift; sourceTree = "<group>"; };
+		E5A05FF02A0B85B4001A1938 /* ImageAnalysisInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysisInteraction.swift; sourceTree = "<group>"; };
 		E5B0102829C18A7100158390 /* RecognisingObjectsFromImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecognisingObjectsFromImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B0102B29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognisingObjectsFromImagesApp.swift; sourceTree = "<group>"; };
 		E5B0102D29C18A7100158390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				E5B0104729C1BA7E00158390 /* VisionKitView.swift */,
+				E5A05FEE2A0B7DBD001A1938 /* DataScanner.swift */,
+				E5A05FF02A0B85B4001A1938 /* ImageAnalysisInteraction.swift */,
 			);
 			path = Visionkit;
 			sourceTree = "<group>";
@@ -196,12 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A05FEF2A0B7DBD001A1938 /* DataScanner.swift in Sources */,
 				E5B0104229C1A79000158390 /* VisionView.swift in Sources */,
 				E5C686AB29C2DF79004A9259 /* WebView.swift in Sources */,
 				E52D4C8029C85E54008BF53F /* FaceDetectionView.swift in Sources */,
 				E5B0104829C1BA7E00158390 /* VisionKitView.swift in Sources */,
 				E5C686A929C2D264004A9259 /* ResultView.swift in Sources */,
 				E5B0103D29C192AD00158390 /* PhotoLibrary.swift in Sources */,
+				E5A05FF12A0B85B4001A1938 /* ImageAnalysisInteraction.swift in Sources */,
 				E5B0102E29C18A7100158390 /* ContentView.swift in Sources */,
 				E5B0102C29C18A7100158390 /* RecognisingObjectsFromImagesApp.swift in Sources */,
 				E5B0104429C1A8C100158390 /* VisionModel.swift in Sources */,

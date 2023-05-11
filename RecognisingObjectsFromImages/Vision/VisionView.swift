@@ -12,8 +12,7 @@ struct VisionView: View {
     @State var isShowLibrary: Bool = false
     @State var isShowCameraView: Bool = false
     @State var image: UIImage?
-    let modeName: String
-    let mode: Mode
+    let mode: VisionMode
     
     var body: some View {
         
@@ -73,7 +72,7 @@ struct VisionView: View {
                 .padding()
             }
         }
-        .navigationTitle(modeName)
+        .navigationTitle(mode.changeJP())
         .toolbar {
             ToolbarItem {
                 HStack {
@@ -105,7 +104,6 @@ struct VisionView: View {
 
 struct VisionView_Previews: PreviewProvider {
     static var previews: some View {
-        VisionView(modeName: "",
-                   mode: .text)
+        VisionView(mode: .text)
     }
 }

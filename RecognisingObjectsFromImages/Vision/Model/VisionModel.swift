@@ -32,7 +32,7 @@ class VisionModel: ObservableObject {
     var request = VNRequest()
     
     
-    func detectedFromImage(image: UIImage, mode: Mode, frameWidth: Double) {
+    func detectedFromImage(image: UIImage, mode: VisionMode, frameWidth: Double) {
         facePoint.removeAll()
         storage.removeAll()
         strings = ""
