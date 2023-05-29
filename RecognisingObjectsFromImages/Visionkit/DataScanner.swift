@@ -11,7 +11,7 @@ import SwiftUI
 
 struct DataScanner: UIViewControllerRepresentable {
     @Binding var isScanning: Bool
-    @Binding var isShowAleart: Bool
+    @Binding var isShowAlert: Bool
     @Binding var topLeft: [Double]
     @Binding var topRight: [Double]
     @Binding var bottomLeft: [Double]
@@ -87,7 +87,7 @@ struct DataScanner: UIViewControllerRepresentable {
             switch error {
             case .cameraRestricted:
                 print("カメラの使用を許可してください。")
-                parent.isShowAleart = true
+                parent.isShowAlert = true
                 
             case .unsupported:
                 print("このデバイスをはサポートされていません。")

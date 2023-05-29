@@ -10,7 +10,7 @@ import VisionKit
 
 struct VisionKitView: View {
     @State var isScanning: Bool = false
-    @State var isShowAleart: Bool = false
+    @State var isShowAlert: Bool = false
     @State var isShowLibrary: Bool = false
     @State var isShowCameraView: Bool = false
     @State var topLeft: [Double] = [0.0, 0.0]
@@ -27,7 +27,7 @@ struct VisionKitView: View {
             if mode == .live {
                 VStack {
                     DataScanner(isScanning: $isScanning,
-                                isShowAleart: $isShowAleart,
+                                isShowAlert: $isShowAlert,
                                 topLeft: $topLeft,
                                 topRight: $topRight,
                                 bottomLeft: $bottomLeft,
@@ -37,6 +37,7 @@ struct VisionKitView: View {
                     ScrollView {
                         Text(code)
                             .padding()
+                            .textSelection(.enabled)
                     }
                 }
                 .task {
@@ -102,6 +103,14 @@ struct VisionKitView: View {
             }
         }
         .navigationTitle(mode.changeJP())
+        .alert(isPresented: $isShowAlert) {
+            Alert(title: Text("使用許可"),
+                  message: Text("この機能を使用するにはカメラの使用許可が必要です。"),
+                  primaryButton: .cancel(),
+                  secondaryButton: .default(Text("設定"), action: {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+            }))
+        }
     }
 }
 
